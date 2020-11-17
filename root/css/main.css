@@ -1,0 +1,41 @@
+@import "header.css";
+@import "previous_works.css";
+
+body{
+    margin: 0;
+    font-family: open-sans, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.grid{
+    margin-left: 11.8%;
+    margin-right: 11.8%;
+    margin-top: 7vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 15px;
+    grid-template-areas: 
+    "a a a a b b b b c c c c"
+    "a a a a b b b b c c c c"
+    "d d d d e e e e f f f f"
+    "d d d d e e e e f f f f"
+    "g g g g h h h h i i i i"
+    "g g g g h h h h i i i i";
+  align-items: start;
+}
+
+.stroke{
+    border: none;
+    height: 0.75px;
+    background-color: white;
+    margin-bottom: 4vh;
+}
+
+.paragraph-white{
+    color: white;
+}
+
+.subtitle{
+    color: #107D7A;
+}

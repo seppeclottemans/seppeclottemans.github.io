@@ -1,0 +1,25 @@
+.previous-works-title{
+    grid-column-start: 1;
+    grid-column-end: 13;
+    margin-top: 450px;
+    text-align: center;
+}
+
+.projects-wrapper{
+    grid-column-start: 1;
+    grid-column-end: 13;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10%;
+
+    align-items: start;
+}
+
+.project-title{
+    color: #107D7A;
+    text-align: center;
+}
+
+.project-image{
+    width: 100%;
+}
