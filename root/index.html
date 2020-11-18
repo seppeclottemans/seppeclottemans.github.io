@@ -4,29 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio site Seppe Clottemans</title>
+    <title>Seppe Clottemans</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://use.typekit.net/yqk6jiw.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
 
-    <div class="background">
+    <div class="background"
+        href="https://unsplash.com/photos/4hbJ-eymZ1o?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">
 
     </div>
 
+    <div class="nav-background">
+            
+    </div>
+
+    <img class="logo" src="images/logo.svg">
+
+    <div class="nav">
+        <a href="#skills" class="paragraph-white">Skills</a>
+        <a href="#previos-works" class="paragraph-white">Previous works</a>
+        <a href="#about-me" class="paragraph-white">About Me</a>
+    </div>
+
     <div class="grid">
-        <img class="logo" src="images/logo.svg">
 
-        <div class="nav">
-            <a class="paragraph-white">Skills</a>
-            <a class="paragraph-white">Previous works</a>
-            <a class="paragraph-white">About Me</a>
-        </div>
+        <div></div>
 
-        <h1 class="main-title">WHO AM I?</h1>
+        <h1 id="skills" class="main-title">WHO AM I?</h1>
 
-        <div class="header-first-row">
+        <div class="header-first-row" data-aos="fade-right">
             <h2 class="header-subtitle">Web developer</h2>
             <hr class="stroke">
             <p class="paragraph-white info-text">Hello! My name is Seppe Clottemans.<br>
@@ -58,11 +68,11 @@
             </div>
 
         </div>
-        <div class="header-second-row">
+        <div class="header-second-row" data-aos="fade-down">
             <img class="photo-seppe" src="images/self.jpg">
         </div>
 
-        <div class="header-third-row">
+        <div class="header-third-row" data-aos="fade-left">
             <h2 class="header-subtitle">Skills</h2>
             <hr class="stroke">
 
@@ -120,30 +130,122 @@
         </div>
 
 
-        <h1 class="subtitle previous-works-title">Previous works</h1>
+        <h1 id="previos-works" class="subtitle previous-works-title" data-aos="fade-down">Previous works</h1>
 
-        <div class="projects-wrapper">
+        <div class="projects-wrapper" data-aos="fade-down">
 
             <div class="project-wrapper">
                 <p class="project-title">FINAL SHOW</p>
-                <img class="project-image" src="images/final_show.png">
+                <img class="project-image" src="images/final_show.jpg">
                 <p class="project-description">
                     Finalshow was a school project wich we made in a team over the course of 3 weeks.<br>
-                    For this project we used Angular as js framework and included a 3D model of our school made by people in our group.<br>
+                    For this project we used Angular as js framework and included a 3D model of our school made by
+                    people in our group.<br>
                     On this digital event you could watch the livestream and chat with others.
                 </p>
             </div>
-        
 
-        
+
+
             <div class="project-wrapper">
-                <p class="project-title">FINAL SHOW</p>
-                <img class="project-image" src="images/final_show.png">
+                <p class="project-title">LOAN SYSTEM</p>
+                <img class="project-image" src="images/loan_system.jpg">
+                <p class="project-description">
+                    The loan system web app was a project I made as my final assignment for the Back-end web
+                    course.<br>
+                    On the web app you could rent items from other users and put items for rent yourself.<br>
+                    This project was a solo project made with laravel for the back-end and tailwind for the front-end.
+                </p>
+            </div>
+
+            <div class="project-wrapper">
+                <p class="project-title">KMSKA</p>
+                <img class="project-image" src="images/kmska.png">
+                <p class="project-description">
+                    In cooperation with the Royal Museum of Fine Arts in Antwerp. We made a web app in a group of five
+                    students.<br>
+                    The app was build to help you plan a route during your visit to the museum. You would first take a
+                    small quiz and based on your interests the app would calculate a personalised route for you.<br>
+                    Or you could select one of our predetermined routes. The app was coded in HTML, CSS and Javascript;
+                    we used multiple libraries such as Imagga, Recombee and Pathfinding.js for the AI to calculate the
+                    best routes.
+                </p>
+            </div>
+
+            <div class="project-wrapper" data-aos="fade-up">
+                <p class="project-title">CORONA APP</p>
+                <img class="project-image" src="images/ios_app.png">
+                <p class="project-description">
+                    For my assignment in IOS development I made an mobile application where you could view covid-19
+                    cases and deaths by country around the world.<br>
+                    The User would select a country on the world map and then see a graph indicating the cases and
+                    deaths of that country.
+                </p>
+            </div>
+
+            <div class="project-wrapper" data-aos="fade-up">
+                <p class="project-title">ANDROID APP</p>
+                <img class="project-image" src="images/android_app.jpg">
+                <p class="project-description">
+                    For my assignment in Android development I decided to make a fun app wich registers the amount of
+                    times you drop your phone.<br>
+                    You could also view charts in the app of the amount of phone dropps per month/week in one day.
+                </p>
+            </div>
+
+            <div class="project-wrapper" data-aos="fade-up">
+                <p class="project-title">PROTOTYPES WEB 3</p>
+                <img class="project-image" src="images/nuxt_prototype.png">
+                <p class="project-description">
+                    During the course of web 3 I made a small prototype in VUE, React and laravel lumen to test these
+                    different framweorks.<br>
+                    After that I started working on a prototype in Nuxt.js to learn about PWA (progressive web app)
+                    technoligies.<br>
+                    In this prototype I made a small todo apllication wich was complete with offline functionalities.
+                </p>
+            </div>
+
+
+
+
+        </div>
+
+        <div id="about-me" class="about-me-wrapper">
+            <img class="about-me-image" src="images/about_me.jpg" data-aos="fade-right">
+            <div class="about-me-text" data-aos="fade-left">
+                <h1 class="subtitle">About Me</h1>
+
+                <p>
+                    My name is Seppe Clottemans. I am a web developer who is
+                    mostly interested in back-end development.<br>
+                    In my free time I like to play games like League of
+                    legends and spend time with my girlfriend.<br>
+                    I am currently in my final year of my multimedia and
+                    communtication technology education at the
+                    Erasmus University College where I am
+                    specializing in web development.
+                </p>
             </div>
         </div>
 
     </div>
 
+    <div class="footer">
+        <div class="footer-links-wrapper">
+            <a class="paragraph-white footer-link" href="https://www.linkedin.com/in/seppe-clottemans-b4a108184/"><img class="icon" src="images/linkedin-logo.svg" alt="Linked-in logo"><label>Seppe Clottemans</label></a>
+            <a class="paragraph-white footer-link" href="mailto:seppeclottemans@hotmail.com"><img class="icon" src="images/email.svg" alt="mail icon"><label>seppeclottemans@hotmail.com</label></a>
+        </div>
+
+        <div class="credit-wrapper">
+            <label class="paragraph-white credit">icons made by: https://www.flaticon.com</label>
+        </div>
+        
+    </div>
+    </div>
+
 </body>
+<script>
+    AOS.init();
+</script>
 
 </html>

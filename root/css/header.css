@@ -1,37 +1,52 @@
 .background{
     position: absolute;
     top: 0;
-    z-index: -1;
+    z-index: 3;
     background-image: url("../images/background-image.jpg");
     width: 100%;
     height: 1100px;
 }
 
 .nav{
-    grid-column-start: 8;
-    grid-column-end: 13;
-    grid-row-start: 1;
-    grid-row-end: 1;
-  align-self: center;
-  display: flex;
-
-  justify-content: flex-end;
+    overflow: hidden;
+    position: fixed;
+    width: 40%;
+    right: 11.8%;
+    top: 8%;
+    text-align: right;
+    z-index: 3;
 }
 
 .nav a{
-    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.nav-background{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #999999;
+    height: 15%;
+    z-index: 2;
 }
 
 .logo{
+    overflow: hidden;
+    position: fixed;
     width: 50px;
+    left: 11.8%;
+    top: 5.7%;
+    z-index: 3;
 }
 
 .main-title{
     grid-column-start: 1;
     grid-column-end: 13;
-    margin-top: 8vh;
+    margin-top: 10vh;
     color: #1BBDB6;
     text-align: center;
+    z-index: 3;
 }
 
 .header-subtitle{
@@ -40,6 +55,7 @@
 
 .header-first-row{
     grid-area: d;
+    z-index: 3;
 }
 
 .info-text{
@@ -51,6 +67,7 @@
     display: flex;
     justify-content: center;
     grid-area: e;
+    z-index: 3;
 }
 
 .photo-seppe{
@@ -62,6 +79,7 @@
 
 .header-third-row{
     grid-area: f;
+    z-index: 3;
 }
 
 .skills-wrapper{
