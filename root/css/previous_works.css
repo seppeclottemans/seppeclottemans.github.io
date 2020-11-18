@@ -11,6 +11,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10%;
+    height: 100%;
 
     align-items: start;
 }
@@ -28,4 +29,16 @@
 
 .project-description{
     font-weight: lighter;
+}
+
+@media (max-width: 480px) {
+
+    .projects-wrapper{
+        grid-column-start: 1;
+        grid-column-end: 13;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 2%;
+    }
+
 }

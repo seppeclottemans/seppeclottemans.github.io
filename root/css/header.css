@@ -1,4 +1,4 @@
-.background{
+.background {
     position: absolute;
     top: 0;
     z-index: 3;
@@ -7,21 +7,21 @@
     height: 1100px;
 }
 
-.nav{
+.nav {
     overflow: hidden;
     position: fixed;
     width: 40%;
     right: 11.8%;
     top: 8%;
     text-align: right;
-    z-index: 3;
+    z-index: 4;
 }
 
-.nav a{
+.nav a {
     margin-left: 10%;
 }
 
-.nav-background{
+.nav-background {
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -31,7 +31,7 @@
     z-index: 2;
 }
 
-.logo{
+.logo {
     overflow: hidden;
     position: fixed;
     width: 50px;
@@ -40,7 +40,7 @@
     z-index: 3;
 }
 
-.main-title{
+.main-title {
     grid-column-start: 1;
     grid-column-end: 13;
     margin-top: 10vh;
@@ -49,20 +49,20 @@
     z-index: 3;
 }
 
-.header-subtitle{
+.header-subtitle {
     color: #1BBDB6;
 }
 
-.header-first-row{
+.header-first-row {
     grid-area: d;
     z-index: 3;
 }
 
-.info-text{
+.info-text {
     margin-bottom: 6vh;
 }
 
-.header-second-row{
+.header-second-row {
     align-self: center;
     display: flex;
     justify-content: center;
@@ -70,25 +70,25 @@
     z-index: 3;
 }
 
-.photo-seppe{
+.photo-seppe {
     object-fit: cover;
-  border-radius: 50%;
-  height: 200px;
-  width: 200px;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
 }
 
-.header-third-row{
+.header-third-row {
     grid-area: f;
     z-index: 3;
 }
 
-.skills-wrapper{
+.skills-wrapper {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.skill-name{
+.skill-name {
     color: white;
     display: inline-block;
     font-size: 1.15em;
@@ -97,7 +97,7 @@
     width: 45%;
 }
 
-.skill-indicator-wrapper{
+.skill-indicator-wrapper {
     align-self: center;
     background-color: white;
     border-radius: 25px;
@@ -106,9 +106,52 @@
     margin-bottom: 3vh;
 }
 
-.skill-indicator{
+.skill-indicator {
     align-self: center;
     background-color: #1BBDB6;
     height: 15px;
     border-radius: 25px;
+}
+
+@media (max-width: 480px) {
+    .nav {
+        right: 0;
+        text-align: left;
+        display: flex;
+        margin: 0;
+        text-align: left;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .nav a {
+        margin-left: 0;
+    }
+
+    .background {
+        height: 1500px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .header-first-row {
+        grid-area: c;
+        grid-column-start: 1;
+        grid-column-end: 13;
+    }
+
+    .header-second-row {
+        grid-area: d;
+        grid-column-start: 1;
+        grid-column-end: 13;
+    }
+
+    .header-third-row {
+        grid-area: e;
+        grid-column-start: 1;
+        grid-column-end: 13;
+    }
 }

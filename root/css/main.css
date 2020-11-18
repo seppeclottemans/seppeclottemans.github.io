@@ -2,6 +2,11 @@
 @import "previous_works.css";
 @import "about_me.css";
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 html{scroll-behavior:smooth}
 
 body{
@@ -94,4 +99,41 @@ body{
 
 a{
     text-decoration: none;
+}
+
+@media (max-width: 480px) {
+    .grid{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+        "a"
+        "b"
+        "c"
+        "d"
+        "e"
+        "f"
+        "g"
+        "h"
+        "i";
+    }
+
+    .footer-links-wrapper{
+        width: 120%;
+    }
+
+    .footer-link{
+        height: 70%;
+    }
+
+    .icon{
+        width: 20px;
+    }
+
+    .footer{
+        font-size: 0.7em;
+        grid-gap: 55px;
+    }
+
+    .credit{
+        text-align: right;
+    }
 }
