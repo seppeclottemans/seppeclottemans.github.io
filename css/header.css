@@ -21,6 +21,14 @@
     margin-left: 10%;
 }
 
+.nav-scrolled a{
+    color: black;
+}
+
+.logo-black{
+    filter: invert(100%);
+}
+
 .nav-background {
     overflow: hidden;
     position: fixed;
