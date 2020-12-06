@@ -17,31 +17,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
     });
 });
-
-// source: https://github.com/kevin-powell/navbar-change-on-scroll
-
-const nav = document.querySelector(".nav");
-const background = document.querySelector(".background");
-const logo = document.querySelector(".logo");
-
-const backgroundOptions = {
-  rootMargin: "-80px 0px 0px 0px"
-};
-
-const backgroundObserver = new IntersectionObserver(function(
-  entries,
-  backgroundObserver
-) {
-  entries.forEach(entry => {
-    if (!entry.isIntersecting) {
-        nav.classList.add("nav-scrolled");
-        logo.classList.add('logo-black');
-    } else {
-        nav.classList.remove("nav-scrolled");
-        logo.classList.remove('logo-black');
-    }
-  });
-},
-backgroundOptions);
-
-backgroundObserver.observe(background);
